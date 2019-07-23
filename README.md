@@ -1,2 +1,2 @@
 # Python_ML_Templates
-Save time by copying and pasting template for ML Models
+Save time by copying and pasting templates for ML Models
