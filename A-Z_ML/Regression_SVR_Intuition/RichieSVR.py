@@ -52,3 +52,5 @@ plt.title('Truth or Bluff (Regression Model)')
 plt.xlabel('Position level')
 plt.ylabel('Salary')
 plt.show()
+
+plt.savefig('SVR.png')
