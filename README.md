@@ -14,7 +14,7 @@ Credit to the Machine Learning A-Z™: Hands-On Python & R In Data Science Cours
 * [Support Vector Regression (SVR) Intuition](https://github.com/Richieone13/Python_ML_Templates/tree/master/A-Z_ML/Regression_SVR_Intuition)
 * [Decision Tree Regression intuition](https://github.com/Richieone13/Python_ML_Templates/tree/master/A-Z_ML/Regression_Decision_Tree_Regression_Intuition)
 * [Random Forest intuition](https://github.com/Richieone13/Python_ML_Templates/tree/master/A-Z_ML/Regression_Random-Forest-Intuition)
-* [Regression Models Pros and Cons](https://github.com/Richieone13/Python_ML_Templates/blob/master/A-Z_ML/Regression--Models-Pros-Cons.pdf)
+* [Regression Models Pros and Cons PDF](https://github.com/Richieone13/Python_ML_Templates/blob/master/A-Z_ML/Regression--Models-Pros-Cons.pdf)
 
 ### Classification Models:
 
@@ -25,7 +25,7 @@ Credit to the Machine Learning A-Z™: Hands-On Python & R In Data Science Cours
 * [Navie Bayes](https://github.com/Richieone13/Python_ML_Templates/tree/master/A-Z_ML/Classification_Naive-Bayes)
 * [Decision Tree](https://github.com/Richieone13/Python_ML_Templates/tree/master/A-Z_ML/Classification_Decision-Tree)
 * [Random Forest](https://github.com/Richieone13/Python_ML_Templates/tree/master/A-Z_ML/Classification_Random-Forest)
-* [Classification Models Pros and Cons](https://github.com/Richieone13/Python_ML_Templates/blob/master/A-Z_ML/Classifications-Models-Pros-Cons.pdf)
+* [Classification Models Pros and Cons PDF](https://github.com/Richieone13/Python_ML_Templates/blob/master/A-Z_ML/Classifications-Models-Pros-Cons.pdf)
 
 ### Clustering Models
 
