@@ -18,11 +18,11 @@ Credit to the Machine Learning A-Z™: Hands-On Python & R In Data Science Cours
 
 ### Classification Models:
 
-* [Logisitic Regression](https://github.com/Richieone13/Python_ML_Templates/tree/master/A-Z_ML/Classification_Logistic-Regression)
+* [Logistic Regression](https://github.com/Richieone13/Python_ML_Templates/tree/master/A-Z_ML/Classification_Logistic-Regression)
 * [K-Nearest-Neighbours](https://github.com/Richieone13/Python_ML_Templates/tree/master/A-Z_ML/Classification_K-Nearest-Neighbors)
 * [Support Vector Machine (SVM)](https://github.com/Richieone13/Python_ML_Templates/tree/master/A-Z_ML/Classification_SVM)
 * [Support Vector Machine Kernel](https://github.com/Richieone13/Python_ML_Templates/tree/master/A-Z_ML/Classification_Kernel-SVM)
-* [Navie Bayes](https://github.com/Richieone13/Python_ML_Templates/tree/master/A-Z_ML/Classification_Naive-Bayes)
+* [Naive Bayes](https://github.com/Richieone13/Python_ML_Templates/tree/master/A-Z_ML/Classification_Naive-Bayes)
 * [Decision Tree](https://github.com/Richieone13/Python_ML_Templates/tree/master/A-Z_ML/Classification_Decision-Tree)
 * [Random Forest](https://github.com/Richieone13/Python_ML_Templates/tree/master/A-Z_ML/Classification_Random-Forest)
 * [Classification Models Pros and Cons PDF](https://github.com/Richieone13/Python_ML_Templates/blob/master/A-Z_ML/Classifications-Models-Pros-Cons.pdf)
