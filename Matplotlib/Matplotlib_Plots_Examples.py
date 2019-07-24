@@ -19,24 +19,35 @@ import pandas as pd
 df.plot(kind='scatter',x='num_children',y='num_pets',color='red')
 plt.show()
 
-# a simple line plot
+# column values as a bar plot
 df.plot(kind='bar',x='name',y='age')
+plt.show()
 
-# gca stands for 'get current axis'
-ax = plt.gca()
+#Line plot with multiple columns
+plt.figure(3)
+ax = plt.gca() # gca stands for 'get current axis'
 df.plot(kind='line',x='name',y='num_children',ax=ax)
 df.plot(kind='line',x='name',y='num_pets', color='red', ax=ax)
 plt.show()
 
-
+# Bar plot with group by
+plt.figure(4)
 df.groupby('state')['name'].nunique().plot(kind='bar')
 plt.show()
 
+plt.savefig('Bar_Group.png')
+
+
+# Stacked bar plot with two-level group by
 df.groupby(['state','gender']).size().unstack().plot(kind='bar',stacked=True)
 plt.show()
 
+plt.savefig('Stacked_Bar_Group.png')
+
+# Stacked bar plot with two-level group by
 df.groupby(['gender','state']).size().unstack().plot(kind='bar',stacked=True)
 plt.show()
 
+# a histogram of column values
 df[['age']].plot(kind='hist',bins=[0,20,40,60,80,100],rwidth=0.8)
 plt.show()
