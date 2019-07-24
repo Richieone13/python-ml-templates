@@ -4,7 +4,7 @@ Save time by using the templates for ML Models
 ---
 
 ### [A-Z Machine Learning:](https://github.com/Richieone13/Python_ML_Templates/tree/master/A-Z_ML) 
-Credit to the Machine Learning A-Z™: Hands-On Python & R In Data Science Course by [Udemy](https://www.udemy.com/machinelearning/) for the templates and intutition of the differnet models.
+Credit to the Machine Learning A-Z™: Hands-On Python & R In Data Science Course by [Udemy](https://www.udemy.com/machinelearning/) for the templates and intutition of the differnet ML models.
 
 ### Regression Models:
 
