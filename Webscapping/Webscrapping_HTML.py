@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup  
 
 # Specify url: url
-url = "https://www.nhhg.org.uk/publications/financial-statements/"
+url = "http://richiewong.co.uk/resources/"
 
 # Package the request, send the request and catch the response: r
 r=requests.get(url)
