@@ -1,77 +1,53 @@
-# Logistic Regression
+"""http://queirozf.com/entries/pandas-dataframe-plot-examples-with-matplotlib-pyplot"""
 
-# Importing the libraries
-import numpy as np
+import pandas as pd
+
+df = pd.DataFrame({
+    'name':['john','mary','peter','jeff','bill','lisa','jose'],
+    'age':[23,78,22,19,45,33,20],
+    'gender':['M','F','M','M','M','F','M'],
+    'state':['california','dc','california','dc','california','texas','texas'],
+    'num_children':[2,0,0,3,2,1,4],
+    'num_pets':[5,1,0,5,2,2,3]
+})
+
+
 import matplotlib.pyplot as plt
 import pandas as pd
 
-# Importing the dataset
-dataset = pd.read_csv('Social_Network_Ads.csv')
-X = dataset.iloc[:, [2, 3]].values
-y = dataset.iloc[:, 4].values
-
-# Splitting the dataset into the Training set and Test set
-from sklearn.model_selection import train_test_split
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.25, random_state = 0)
-
-# Feature Scaling
-from sklearn.preprocessing import StandardScaler
-sc = StandardScaler()
-X_train = sc.fit_transform(X_train)
-X_test = sc.transform(X_test)
-
-# Fitting Logistic Regression to the Training set
-from sklearn.linear_model import LogisticRegression
-classifier = LogisticRegression(random_state = 0)
-classifier.fit(X_train, y_train)
-
-# Predicting the Test set results
-y_pred = classifier.predict(X_test)
-
-# Making the Confusion Matrix
-from sklearn.metrics import confusion_matrix
-cm = confusion_matrix(y_test, y_pred)
-
-# Visualising the Training set results
-plt.figure(1)
-
-from matplotlib.colors import ListedColormap
-X_set, y_set = X_train, y_train
-X1, X2 = np.meshgrid(np.arange(start = X_set[:, 0].min() - 1, stop = X_set[:, 0].max() + 1, step = 0.01),
-                     np.arange(start = X_set[:, 1].min() - 1, stop = X_set[:, 1].max() + 1, step = 0.01))
-plt.contourf(X1, X2, classifier.predict(np.array([X1.ravel(), X2.ravel()]).T).reshape(X1.shape),
-             alpha = 0.10, cmap = ListedColormap(('red', 'green')))
-plt.xlim(X1.min(), X1.max())
-plt.ylim(X2.min(), X2.max())
-for i, j in enumerate(np.unique(y_set)):
-    plt.scatter(X_set[y_set == j, 0], X_set[y_set == j, 1],
-                c = ListedColormap(('red', 'green'))(i), label = j)
-plt.title('Logistic Regression (Training set)')
-plt.xlabel('Age')
-plt.ylabel('Estimated Salary')
-plt.legend()
+# a scatter plot comparing num_children and num_pets
+df.plot(kind='scatter',x='num_children',y='num_pets',color='red')
 plt.show()
 
-plt.savefig('Logistic_regression-train.png')
-
-# Visualising the Test set results
-plt.figure(2)
-
-from matplotlib.colors import ListedColormap
-X_set, y_set = X_test, y_test
-X1, X2 = np.meshgrid(np.arange(start = X_set[:, 0].min() - 1, stop = X_set[:, 0].max() + 1, step = 0.01),
-                     np.arange(start = X_set[:, 1].min() - 1, stop = X_set[:, 1].max() + 1, step = 0.01))
-plt.contourf(X1, X2, classifier.predict(np.array([X1.ravel(), X2.ravel()]).T).reshape(X1.shape),
-             alpha = 0.10, cmap = ListedColormap(('red', 'green')))
-plt.xlim(X1.min(), X1.max())
-plt.ylim(X2.min(), X2.max())
-for i, j in enumerate(np.unique(y_set)):
-    plt.scatter(X_set[y_set == j, 0], X_set[y_set == j, 1],
-                c = ListedColormap(('red', 'green'))(i), label = j)
-plt.title('Logistic Regression (Test set)')
-plt.xlabel('Age')
-plt.ylabel('Estimated Salary')
-plt.legend()
+# column values as a bar plot
+df.plot(kind='bar',x='name',y='age')
 plt.show()
 
-plt.savefig('Logistic_regression-test.png')
+#Line plot with multiple columns
+plt.figure(3)
+ax = plt.gca() # gca stands for 'get current axis'
+df.plot(kind='line',x='name',y='num_children',ax=ax)
+df.plot(kind='line',x='name',y='num_pets', color='red', ax=ax)
+plt.show()
+
+# Bar plot with group by
+plt.figure(4)
+df.groupby('state')['name'].nunique().plot(kind='bar')
+plt.show()
+
+plt.savefig('Bar_Group.png')
+
+
+# Stacked bar plot with two-level group by
+df.groupby(['state','gender']).size().unstack().plot(kind='bar',stacked=True)
+plt.show()
+
+plt.savefig('Stacked_Bar_Group.png')
+
+# Stacked bar plot with two-level group by
+df.groupby(['gender','state']).size().unstack().plot(kind='bar',stacked=True)
+plt.show()
+
+# a histogram of column values
+df[['age']].plot(kind='hist',bins=[0,20,40,60,80,100],rwidth=0.8)
+plt.show()
