@@ -33,9 +33,8 @@ Credit to the Machine Learning A-Z™: Hands-On Python & R In Data Science Cours
 
 * K Means Clustering
 
-### Refining the model:
+### [Refining the model:](https://github.com/Richieone13/Python_ML_Templates/tree/master/A-Z_ML/Model-Selection)
 
-[Model Selection](https://github.com/Richieone13/Python_ML_Templates/tree/master/A-Z_ML/Model-Selection)
 * Applications of Grid_Search to customise and find the best Hyperparameters (user input parameters)
 * Applications of K fold cross validation to take different slices of the train and test data
 
