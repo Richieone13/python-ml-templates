@@ -6,6 +6,10 @@ Save time by using the templates for ML Models
 ### [A-Z Machine Learning:](https://github.com/Richieone13/Python_ML_Templates/tree/master/A-Z_ML) 
 Credit to the Machine Learning A-Z™: Hands-On Python & R In Data Science Course by [Udemy](https://www.udemy.com/machinelearning/) for the templates and intutition of the differnet ML models.
 
+[Visuals of the different models via Google Slide](https://docs.google.com/presentation/d/1YKTXZCxPsC2kefWQZNq1fIUK3ZjK7b3jLTOBYVkg0cY/edit?usp=sharing)
+
+https://docs.google.com/presentation/d/1YKTXZCxPsC2kefWQZNq1fIUK3ZjK7b3jLTOBYVkg0cY/edit?usp=sharing
+
 ### Regression Models:
 
 * [Simple Linear Regression](https://github.com/Richieone13/Python_ML_Templates/tree/master/A-Z_ML/Regression_Simple_Linear-Regression)
