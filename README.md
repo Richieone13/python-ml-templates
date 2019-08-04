@@ -48,10 +48,6 @@ The library Panda is used to manipulate data, this includes grouping and finding
 ### [Matplotlib:](https://github.com/Richieone13/Python_ML_Templates/blob/master/Matplotlib/Matplotlib_Plots_Examples.py)
 The library Matpltlib is used to plot interpretable graphs and visualisations, these include bar charts, scatter plots and histograms etc.
 
-<img src="Python_ML_Templates/blob/master/Matplotlib/Bar_Group.png" width="500">
-
-<img src="Python_ML_Templates/blob/master/Matplotlib/Stacked_Bar_Group.png" width="500">
-
 ---
 
 ### [Webscrapping:](https://github.com/Richieone13/Python_ML_Templates/tree/master/Webscapping)
